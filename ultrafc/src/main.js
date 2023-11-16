@@ -5,6 +5,7 @@ import './index.css'
 
 import ContactVue from './components/ContactView.vue';
 import BasePage from './components/BasePage.vue';
+import SuperLeagueHomeView from './components/SuperLeagueHomeView.vue';
 
 const router = createRouter({
   history: createWebHistory(), // Use createWebHistory for history mode
@@ -19,6 +20,16 @@ const router = createRouter({
       name: 'Contact',
       component: ContactVue
     },
+    {
+        path: '/superleague/home',
+        name: 'superLeagueHome',
+        component: SuperLeagueHomeView
+      },
+      {
+        path: '/superleague/contact',
+        name: 'superLeagueContact',
+        component: ContactVue
+      },
   ]
 });
 
