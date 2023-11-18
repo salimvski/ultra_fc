@@ -1,8 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/208cd3f2-6217-4ce0-b5e8-330c1be613e5/resourceGroups/ultrasfc/providers/Microsoft.Web/sites/ultrasfc",
-    "appService.deploySubpath": "."
-}
