@@ -5,15 +5,15 @@
     </div>
     <header class="absolute inset-x-0 top-0 z-50">
       <nav
-        class="flex items-center justify-between p-6 lg:px-8"
+        class="flex items-center justify-center p-6 lg:px-8"
         aria-label="Global"
       >
-        <div class="flex lg:flex-1">
-          <div class="absolute left-10 top-0">
+        <div class="flex">
+          <div class="absolute left-0 top-0">
             <img :src="ultrafc_logo" alt="ultras fc logo"  />
         </div>
         </div>
-        <div class="flex lg:hidden">
+        <div class="flex hidden">
           <button
             type="button"
             class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -35,24 +35,24 @@
             </svg>
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12 text-white">
-          <router-link to="/" class="text-sm font-semibold leading-6 text-white">Accueil</router-link>
-          <router-link to="/contact" class="text-sm font-semibold leading-6 text-white">Contact</router-link>
+        <div class="flex justify-center text-white space-x-6">
+          <router-link to="/" class="flex text-sm font-semibold leading-6 text-white">Accueil</router-link>
+          <router-link to="/contact" class="flex text-sm font-semibold leading-6 text-white">Contact</router-link>
         </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div class="hidden">
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
             >Log in <span aria-hidden="true">&rarr;</span></a
           >
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
-      <div class="lg:hidden" role="dialog" aria-modal="true">
+      <div class="hidden" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-0 z-50"></div>
         <div
-          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6  sm:ring-1 sm:ring-gray-900/10"
         >
-          <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between hidden">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Ultras FC</span>
               <img
@@ -79,7 +79,7 @@
               </svg>
             </button>
           </div>
-          <div class="mt-6 flow-root">
+          <div class="mt-6 flow-root hidden">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <a
@@ -136,7 +136,7 @@
         </div>
         <div class="text-center">
           <h1
-            class="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+            class="text-[2.5rem] font-bold tracking-tight text-white"
           >
           Bienvenue chez ULTRAS FC ! 
           </h1>

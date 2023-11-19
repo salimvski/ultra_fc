@@ -1,16 +1,30 @@
 <template>
-    <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div class="isolate bg-white py-24 w-full">
       <div class="flex justify-center">
         <img :src="ultrafc_logo" alt="Ultra FC Premiership Win" class="h-[10rem] rounded-xl"  />
       </div>
       <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true">
         <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>
-      <div class="mx-auto max-w-2xl text-center mt-[5rem]">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contacter Ultras FC</h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">Que vous soyez un fan passionné ou un futur coéquipier, nous sommes impatients de vous entendre. Contactez-nous pour tout ce qui concerne Ultras FC et rejoignez l'aventure du football passionné !</p>
+      <div class="mx-auto text-center mt-[5rem]">
+        <h2 class="text-center font-bold tracking-tight text-gray-900">Contacter Ultras FC</h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600 w-[50%] mx-auto">Que vous soyez un fan passionné ou un futur coéquipier, nous sommes impatients de vous entendre. Contactez-nous pour tout ce qui concerne Ultras FC et rejoignez l'aventure du football passionné !</p>
       </div>
-      <div class="w-[60rem] h-[20rem] rounded-lg shadow-lg border flex mx-auto mt-5 justify-between items-center px-[3rem]">
+      <div class="lg:w-[60rem] h-[20rem] rounded-lg shadow-lg border flex flex-col  lg:flex-row py-5 mx-auto mt-5 justify-between items-center px-[3rem]">
+        <div class="flex flex-col">
+          <div class="flex font-bold text-lg">Addresse mail</div>
+          <div class="flex justify-center">ultrasfc@gmail.com</div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex font-bold text-lg">Page Facebook</div>
+          <div class="flex justify-center"><a href="https://www.facebook.com/profile.php?id=100090664961927&ref=xav_ig_profile_web" style="text-decoration: underline;">Cliquer !</a></div>
+        </div>
+        <div class="flex flex-col justify-center">
+          <div class="flex font-bold text-lg">Page Instagram</div>
+          <div class="flex justify-center"><a href="https://www.instagram.com/ultrasfc0/" style="text-decoration: underline;">Cliquer !</a></div>
+        </div>
+      </div>
+      <div class=" h-[20rem] rounded-lg shadow-lg border flex mx-auto mt-5 justify-between items-center px-[3rem] flex-col py-5 sm:mx-10 hidden">
         <div class="flex flex-col">
           <div class="flex font-bold text-lg">Addresse mail</div>
           <div class="flex justify-center">ultrasfc@gmail.com</div>
