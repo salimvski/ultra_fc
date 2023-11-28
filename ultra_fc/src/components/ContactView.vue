@@ -1,5 +1,6 @@
 <template>
-    <div class="isolate bg-white py-24 w-full">
+  <BasePage>
+    <div class="isolate bg-white w-full">
       <div class="flex justify-center">
         <img :src="ultrafc_logo" alt="Ultra FC Premiership Win" class="h-[10rem] rounded-xl"  />
       </div>
@@ -104,6 +105,7 @@
         </div>
       </form>
     </div>
+  </BasePage>
   </template>
   
   <script setup>
@@ -111,6 +113,7 @@
   import { ChevronDownIcon } from '@heroicons/vue/20/solid'
   import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue'
   import ultrafc_logo from "../assets/ultrafc_logo_bg_black.jpg";
+  import BasePage from './BasePage.vue';
   
   const agreed = ref(false)
   </script>

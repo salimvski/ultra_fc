@@ -4,8 +4,9 @@ import App from './App.vue'
 import './index.css'
 
 import ContactVue from './components/ContactView.vue';
-import BasePage from './components/BasePage.vue';
 import SuperLeagueHomeView from './components/SuperLeagueHomeView.vue';
+import HomeView from './components/HomeView.vue';
+import TeamView from './components/TeamView.vue'
 
 const router = createRouter({
   history: createWebHistory(), // Use createWebHistory for history mode
@@ -13,12 +14,17 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: BasePage
+      component: HomeView
     },
     {
       path: '/contact',
       name: 'Contact',
       component: ContactVue
+    },
+    {
+      path: '/team',
+      name: 'Team',
+      component: TeamView
     },
     {
         path: '/superleague/home',
