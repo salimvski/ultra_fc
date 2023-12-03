@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[100vw]">
+  <div>
     <router-view />
   </div>
 </template>

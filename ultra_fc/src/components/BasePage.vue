@@ -1,16 +1,13 @@
 <template>
-  <div class="bg-white h-screen overflow-hidden">
-    <div class="absolute inset-0 h-full w-full brightness-50">
-        <img :src="ultrafc_premiership_win" alt="Ultra FC Premiership Win" class="h-full w-full object-cover hidden"  />
-    </div>
+  <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav
         class="flex items-center justify-center p-6 lg:px-8 bg-black h-[6rem]"
         aria-label="Global"
       >
         <div class="flex">
-          <div class="absolute left-0 top-0">
-            <img :src="ultrafc_logo" alt="ultras fc logo"  />
+          <div class="absolute left-5 top-3">
+            <img :src="ultrafc_logo" alt="ultras fc logo" class="h-[5rem] w-[5rem]"  />
         </div>
         </div>
         <div class="flex hidden">
@@ -36,9 +33,9 @@
           </button>
         </div>
         <div class="flex justify-center text-white space-x-6">
-          <router-link to="/" class="flex text-sm font-semibold leading-6 text-white">Accueil</router-link>
+          <router-link to="/" class="flex text-sm font-semibold leading-6 text-white">Home</router-link>
           <router-link to="/contact" class="flex text-sm font-semibold leading-6 text-white">Contact</router-link>
-          <router-link to="/team" class="flex text-sm font-semibold leading-6 text-white">Joueurs</router-link>
+          <router-link to="/team" class="flex text-sm font-semibold leading-6 text-white">Team</router-link>
         </div>
         <div class="hidden">
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
@@ -47,13 +44,12 @@
         </div>
       </nav>
     </header>
-    <body class="pt-[10rem]">
+    <body class="h-full">
       <slot></slot>
     </body>
   </div>
 </template>
 
 <script setup>
-import ultrafc_premiership_win from "../assets/ultra_fc_premiership_win.jpg";
 import ultrafc_logo from "../assets/ultrafc_logo.png";
 </script>
