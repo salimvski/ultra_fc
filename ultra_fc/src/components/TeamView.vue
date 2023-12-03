@@ -307,6 +307,7 @@ import samy_douag_picture from "../assets/samy_douag.jpg";
 import ilyes_raiq_picture from "../assets/ilyes_raiq.jpg";
 import aymen_abkari_picture from "../assets/aymen_abkari.jpg";
 import nawfal_chbada_picture from "../assets/nawfal_chbada.jpg";
+import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 import BasePage from "./BasePage.vue";
 
 const goalkeaperPlayers = {

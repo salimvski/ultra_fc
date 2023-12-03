@@ -14,7 +14,7 @@
       <div class="lg:w-[60rem] h-[20rem] rounded-lg shadow-lg border flex flex-col  lg:flex-row py-5 mx-auto mt-5 justify-between items-center px-[3rem]">
         <div class="flex flex-col">
           <div class="flex font-bold text-lg text-center mx-auto">Mail Address</div>
-          <div class="flex justify-center">ultrasfc@gmail.com</div>
+          <div class="flex justify-center">ultrasfclub@gmail.com</div>
         </div>
         <div class="flex flex-col">
           <div class="flex font-bold text-lg">Facebook Page</div>
