@@ -25,45 +25,17 @@
           <div class="flex justify-center">
             <div class="mt-[2rem]">
               <button @click="loadItems('coaches', -1)" v-if="showPreviousCoachesButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
-                  />
-                </svg>
+                <img :src="chevron_left" class="h-[16px] w-[16px]" />
               </button>
               <button @click="loadItems('coaches', 1)" v-if="showLoadCoachesButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                  />
-                </svg>
+                <img :src="chevron_right" class="h-[16px] w-[16px]" />
               </button>
             </div>
           </div>
         </div>
         <!-- Goal Keepers -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Goal Keepers</div>
+          <div class="text-center font-bold text-[1.5rem]">Goalkeepers</div>
           <div class="flex justify-center items-center space-x-5">
             <div
               v-for="(player, index) in displayedGoalkeepers"
@@ -81,38 +53,10 @@
           <div class="flex justify-center">
             <div class="mt-[2rem]"> 
               <button @click="loadItems('goalkeepers', -1)" v-if="showPreviousButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
-                  />
-                </svg>
+                <img :src="chevron_left" class="h-[16px] w-[16px]" />
               </button>
               <button @click="loadItems('goalkeepers', 1)" v-if="showLoadButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                  />
-                </svg>
+                <img :src="chevron_right" class="h-[16px] w-[16px]" />
               </button>
             </div>
           </div>
@@ -120,7 +64,7 @@
 
         <!-- Defense players -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Defense</div>
+          <div class="text-center font-bold text-[1.5rem]">Defenders</div>
           <div class="flex justify-center items-center space-x-5">
             <div
               v-for="(player, index) in displayedDefensePlayers"
@@ -138,38 +82,10 @@
           <div class="flex justify-center">
             <div class="mt-[2rem]">
               <button @click="loadItems('defense', -1)" v-if="showPreviousDefenseButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
-                  />
-                </svg>
+                <img :src="chevron_left" class="h-[16px] w-[16px]"/>
               </button>
               <button @click="loadItems('defense', 1)" v-if="showLoadDefenseButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                  />
-                </svg>
+                <img :src="chevron_right" class="h-[16px] w-[16px]" />
               </button>
             </div>
           </div>
@@ -177,7 +93,7 @@
 
         <!-- MidField players -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Mid field Players</div>
+          <div class="text-center font-bold text-[1.5rem]">Midfielders</div>
           <div class="flex justify-center items-center space-x-5">
             <div
               v-for="(player, index) in displayedMidFieldPlayers"
@@ -195,38 +111,10 @@
           <div class="flex justify-center">
             <div class="mt-[1rem]">
               <button @click="loadItems('midfield', -1)" v-if="showPreviousMidFieldButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
-                  />
-                </svg>
+                <img :src="chevron_left" class="h-[16px] w-[16px]" />
               </button>
               <button @click="loadItems('midfield', 1)" v-if="showLoadMidFieldButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                  />
-                </svg>
+                <img :src="chevron_right" class="h-[16px] w-[16px]" />
               </button>
             </div>
           </div>
@@ -234,7 +122,7 @@
 
         <!-- Strickers players -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Strickers</div>
+          <div class="text-center font-bold text-[1.5rem]">Strikers</div>
           <div class="flex justify-center items-center space-x-5">
             <div
               v-for="(player, index) in displayedStrickers"
@@ -252,38 +140,10 @@
           <div class="flex justify-center">
             <div class="mt-[2rem]">
               <button @click="loadItems('strickers', -1)" v-if="showPreviousStrickersButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
-                  />
-                </svg>
+                <img :src="chevron_left" class="h-[16px] w-[16px]" />
               </button>
               <button @click="loadItems('strickers', 1)" v-if="showLoadStrickersButton">
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 8 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                  />
-                </svg>
+                <img :src="chevron_right" class="h-[16px] w-[16px]" />
               </button>
             </div>
           </div>
@@ -307,7 +167,9 @@ import samy_douag_picture from "../assets/samy_douag.jpg";
 import ilyes_raiq_picture from "../assets/ilyes_raiq.jpg";
 import aymen_abkari_picture from "../assets/aymen_abkari.jpg";
 import nawfal_chbada_picture from "../assets/nawfal_chbada.jpg";
-import { ChevronDownIcon } from '@heroicons/vue/20/solid'
+
+import chevron_right from "../assets/chevron_right.png";
+import chevron_left from "../assets/chevron_left.png";
 import BasePage from "./BasePage.vue";
 
 const goalkeaperPlayers = {

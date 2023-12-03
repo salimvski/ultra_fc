@@ -14,7 +14,7 @@
     "@mui/material": "^5.14.17",
     "core-js": "^3.8.3",
     "tailwindcss": "^3.3.5",
-    "vue": "^3.2.13",
+    "vue": "^3.3.9",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
@@ -26,7 +26,10 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "postcss": "^8.4.31",
-    "vue-cli-plugin-vuetify": "~2.5.8"
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "vue-loader": "^17.3.1",
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.7.15"
   },
   "eslintConfig": {
     "root": true,
