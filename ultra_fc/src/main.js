@@ -5,7 +5,7 @@ import './index.css'
 
 import ContactVue from './components/ContactView.vue';
 import SuperLeagueHomeView from './components/SuperLeagueHomeView.vue';
-import HomeView from './components/HomeView.vue';
+import HomeView from './components/HomeView2.vue';
 import TeamView from './components/TeamView.vue'
 
 const router = createRouter({

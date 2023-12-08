@@ -99,164 +99,301 @@
     </div>
     <!-- About Us -->
 
-
     <div class="flex flex-col justify-center items-center mt-[3rem] hidden">
-      <div class="flex font-bold text-[2rem]">Welcome to </div>
-      <div class="flex font-bold text-[2rem]">ssthe ULTRAS FC Football Club!</div>
+      <div class="flex font-bold text-[2rem]">Welcome to</div>
+      <div class="flex font-bold text-[2rem]">
+        ssthe ULTRAS FC Football Club!
+      </div>
       <div
         class="flex text-sm border sm:mx-[20%] lg:mx-[20%] rounded-lg p-[2rem] mt-[1rem] bg-stone-400"
       >
         Welcome to the ULTRAS FC Football Club! We are delighted with you
         welcome into our family dedicated to high-level football.
       </div>
-      <div class="hidden">Our club
-        embodies the spirit of competition, commitment and determination, and
-        these internal regulations have was designed to ensure an enriching and
-        respectful experience for all members. As a club playing in AA, our
-        primary objective is to achieve excellence on the field while
-        maintaining high standards of integrity, fair play and behavior off the
-        field. We firmly believe that football is much more that a simple game
-        is a way to surpass oneself, to connect and to flourish as as athletes
-        and as human beings.</div>
+      <div class="hidden">
+        Our club embodies the spirit of competition, commitment and
+        determination, and these internal regulations have was designed to
+        ensure an enriching and respectful experience for all members. As a club
+        playing in AA, our primary objective is to achieve excellence on the
+        field while maintaining high standards of integrity, fair play and
+        behavior off the field. We firmly believe that football is much more
+        that a simple game is a way to surpass oneself, to connect and to
+        flourish as as athletes and as human beings.
+      </div>
     </div>
 
-    <div class="relative isolate overflow-hidden bg-gray-900 sm:py-[10rem] lg:py-[12rem]">
-  <img :src="ultrafc_premiership_win" alt="" class="brightness-[20%] absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
-  <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
-    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-  </div>
-  <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
-    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-  </div>
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-3xl">Welcome to ULTRAS FC !</h2>
-      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-3xl"></h2>
-      <p class="mt-6 text-lg leading-8 text-gray-300 w-[50%]">We are delighted with you
-        welcome into our family dedicated to high-level football.</p>
+    <div
+      class="relative isolate overflow-hidden bg-gray-900 sm:py-[10rem] lg:py-[12rem]"
+    >
+      <img
+        :src="ultrafc_premiership_win"
+        alt="ultra_fc_win"
+        class="brightness-[20%] absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center hidden"
+      />
+      <div
+        class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div
+        class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-3xl">
+            Welcome to ULTRAS FC !
+          </h2>
+          <h2
+            class="text-3xl font-bold tracking-tight text-white sm:text-3xl"
+          ></h2>
+          <p class="mt-6 text-lg leading-8 text-gray-300 w-[50%]">
+            We are delighted with you welcome into our family dedicated to
+            high-level football.
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="text-base font-semibold leading-7 text-black">About Us</h2>
-      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our History</p>
-      <p class="mt-6 text-lg leading-8 text-gray-600">The Ultras FC team had remarkable seasons in 2022 and 2023,
-        demonstrating his skill and determination on different terrains and in
-        different leagues.</p>
+    <div class="bg-white py-24 sm:py-32 hidden">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base font-semibold leading-7 text-black">About Us</h2>
+          <p
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Our History
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            The Ultras FC team had remarkable seasons in 2022 and 2023,
+            demonstrating his skill and determination on different terrains and
+            in different leagues.
+          </p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl
+            class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+          >
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+                >
+                  <img :src="soccer_ball_icon" alt="soccer" />
+                </div>
+                Summer 2022 - QSL League Quarter-Final at Terrain Catalogna,
+                Lachine (7vs7)
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Ultras FC shined during the QSL League summer tournament. In a
+                very tournament competitive at the Catalogna field in Lachine,
+                the team reached the quarter-finals. They showed their skill and
+                cohesion by winning tense matches against formidable opponents,
+                thus reaching the final stages of the tournament. (Player of the
+                season Thierry NDIMIS).
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+                >
+                  <img :src="soccer_ball_icon" alt="soccer" />
+                </div>
+                Winter 2022 - Stringer League Finalist at Concordia Dome (7vs7)
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                The winter season was also successful for us Ultras FC. We have
+                reached the Stringer League final at the Concordia Dome. In an
+                intense match and well fought, we showed our tenacity, but
+                unfortunately, we We had to settle for second place. However,
+                this experience strengthened our determination to succeed in
+                future tournaments. (Player of the tournament Nassim ZAHIRI)
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div
+                  class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+                >
+                  <img :src="soccer_ball_icon" alt="soccer" />
+                </div>
+                Summer 2023 - Premiership league champion at Molson McGill Field
+                (11 vs 11)
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                The following summer, we redoubled our efforts and won first
+                place to the prestigious Premiership Trophy. Playing at Molson
+                McGill Stadium in an 11 vs 11 format, the team showed its
+                tactical maturity, coordination and his exceptional team spirit.
+                We won the championship convincing way, thus proving that we are
+                among the best teams from the Greater Montreal region.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
     </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white">
-              <img :src="soccer_ball_icon" alt="soccer"/>
-            </div>
-            Summer 2022 - QSL League Quarter-Final at Terrain Catalogna, Lachine
-            (7vs7)
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">Ultras FC shined during the QSL League summer tournament. In a very
-            tournament competitive at the Catalogna field in Lachine, the team
-            reached the quarter-finals. They showed their skill and cohesion by
-            winning tense matches against formidable opponents, thus reaching the
-            final stages of the tournament. (Player of the season Thierry NDIMIS).</dd>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white">
-              <img :src="soccer_ball_icon" alt="soccer"/>
-            </div>
-            Winter 2022 - Stringer League Finalist at Concordia Dome (7vs7)
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">The winter season was also successful for us Ultras FC. We have reached
-            the Stringer League final at the Concordia Dome. In an intense match and
-            well fought, we showed our tenacity, but unfortunately, we We had to
-            settle for second place. However, this experience strengthened our
-            determination to succeed in future tournaments. (Player of the
-            tournament Nassim ZAHIRI)</dd>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white">
-              <img :src="soccer_ball_icon" alt="soccer"/>
-            </div>
-            Summer 2023 - Premiership league champion at Molson McGill Field (11 vs 11)
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">The following summer, we redoubled our efforts and won first place
-to the prestigious Premiership Trophy. Playing at Molson McGill Stadium in
-an 11 vs 11 format, the team showed its tactical maturity, coordination and
-his exceptional team spirit. We won the championship
-convincing way, thus proving that we are among the best
-teams from the Greater Montreal region.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
 
-<!-- Our vision -->
-<div class="relative overflow-hidden bg-white">
-    <div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
-      <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-        <div class="sm:max-w-lg">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Our Vision</h1>
-          <p class="mt-4 text-xl text-gray-500">The team made up of ambitious young players constitutes the real driving force of
-our club.</p>
-        </div>
-        <div class="flex">
-          <div class="mt-10">
-            <!-- Decorative image grid -->
-            <div aria-hidden="true" class="pointer-events-none sm:hidden lg:block lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
-              <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                <div class="flex items-center space-x-6 lg:space-x-8">
-                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                    <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                      <img :src="yossof_home" alt="" class="h-full w-full object-cover object-center" />
+    <!-- Our vision -->
+    <div class="relative overflow-hidden bg-white">
+      <div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+          <div class="sm:max-w-lg">
+            <h1
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+            >
+              Our Vision
+            </h1>
+            <p class="mt-4 text-xl text-gray-500">
+              The team made up of ambitious young players constitutes the real
+              driving force of our club.
+            </p>
+          </div>
+          <div class="flex">
+            <div class="mt-10">
+              <!-- Decorative image grid -->
+              <div
+                aria-hidden="true"
+                class="pointer-events-none sm:hidden lg:block lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+              >
+                <div
+                  class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8"
+                >
+                  <div class="flex items-center space-x-6 lg:space-x-8">
+                    <div
+                      class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                    >
+                      <div
+                        class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100"
+                      >
+                        <img
+                          :src="yossof_home"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          :src="bachir_home"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
                     </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img :src="bachir_home" alt="" class="h-full w-full object-cover object-center" />
+                    <div
+                      class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                    >
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          :src="ilyes_raiq_picture"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          :src="genaro_home"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          :src="aymen_abkari_picture"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img :src="ilyes_raiq_picture" alt="" class="h-full w-full object-cover object-center" />
-                    </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img :src="genaro_home" alt="" class="h-full w-full object-cover object-center" />
-                    </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img :src="aymen_abkari_picture" alt="" class="h-full w-full object-cover object-center" />
-                    </div>
-                  </div>
-                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img :src="simon_bauvais_home" alt="" class="h-full w-full object-cover object-center" />
-                    </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
-                      <img :src="felix_lundry_home" alt="" class="h-full w-full object-cover object-center" />
+                    <div
+                      class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
+                    >
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          :src="simon_bauvais_home"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div class="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          :src="felix_lundry_home"
+                          alt=""
+                          class="h-full w-full object-cover object-center"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="sm:max-w-lg">
-          <p class="mt-4 text-xl text-gray-500">We believe in their potential and their desire to grow, and we
-let us commit to supporting them in their journey towards excellence. The ambition of these players,
-combined with their passion for football, creates a dynamic that propels our team
-towards the future with confidence and hope. They are the builders of our sporting heritage, and
-we are proud to have them by our side, ready to take on any challenges that arise
-their. Together we share the vision of a bright future for our team, driven
-by the unwavering desire of our young talents to succeed</p>
-        </div>
+              <div class="sm:max-w-lg">
+                <p class="mt-4 text-xl text-gray-500">
+                  We believe in their potential and their desire to grow, and we
+                  let us commit to supporting them in their journey towards
+                  excellence. The ambition of these players, combined with their
+                  passion for football, creates a dynamic that propels our team
+                  towards the future with confidence and hope. They are the
+                  builders of our sporting heritage, and we are proud to have
+                  them by our side, ready to take on any challenges that arise
+                  their. Together we share the vision of a bright future for our
+                  team, driven by the unwavering desire of our young talents to
+                  succeed
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
   </BasePage>
 </template>
 
