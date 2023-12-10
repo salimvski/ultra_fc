@@ -8,7 +8,11 @@
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img :src="ultrafc_logo" alt="ultras fc logo" class="h-8 w-auto rounded-lg"  />
+            <img
+              :src="ultrafc_logo"
+              alt="ultras fc logo"
+              class="h-8 w-auto rounded-lg"
+            />
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -49,7 +53,11 @@
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
-              <img :src="ultrafc_logo" alt="ultras fc logo" class="h-8 w-auto rounded-lg"  />
+              <img
+                :src="ultrafc_logo"
+                alt="ultras fc logo"
+                class="h-8 w-auto rounded-lg"
+              />
             </a>
             <button
               type="button"
@@ -129,11 +137,11 @@
           <h1
             class="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl"
           >
-          Welcome to the ULTRAS FC Football Club!
+            Welcome to the ULTRAS FC Football Club!
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-600">
-            We are delighted with you
-        welcome into our family dedicated to high-level football.
+            We are delighted with you welcome into our family dedicated to
+            high-level football.
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6 hidden">
             <a
@@ -196,14 +204,14 @@
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
         <dl
-          class="grid  grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16 text-center"
+          class="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16 text-center"
         >
           <div class="relative mx-[2rem]">
             <div
-                class="mx-auto xl:absolute xl:top-0 xl:left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white"
-              >
-                <img :src="soccer_ball_icon" alt="soccer" />
-              </div>
+              class="mx-auto xl:absolute xl:top-0 xl:left-[-2.5rem] xl:flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+            >
+              <img :src="soccer_ball_icon" alt="soccer" />
+            </div>
             <dt class="text-base font-semibold leading-7 text-gray-900">
               Summer 2022 - QSL League Quarter-Final at Terrain Catalogna,
               Lachine (7vs7)
@@ -219,10 +227,10 @@
           </div>
           <div class="relative mx-[2rem]">
             <div
-                class="mx-auto xl:absolute xl:top-0 xl:left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white"
-              >
-                <img :src="soccer_ball_icon" alt="soccer" />
-              </div>
+              class="mx-auto xl:absolute xl:top-0 xl:left-[-2.5rem] flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+            >
+              <img :src="soccer_ball_icon" alt="soccer" />
+            </div>
             <dt class="text-base font-semibold leading-7 text-gray-900">
               Winter 2022 - Stringer League Finalist at Concordia Dome (7vs7)
             </dt>
@@ -237,10 +245,10 @@
           </div>
           <div class="relative mx-[2rem]">
             <div
-                class="mx-auto xl:absolute xl:top-0 xl:left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-white"
-              >
-                <img :src="soccer_ball_icon" alt="soccer" />
-              </div>
+              class="mx-auto xl:absolute xl:top-0 xl:left-[-2.5rem] flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+            >
+              <img :src="soccer_ball_icon" alt="soccer" />
+            </div>
             <dt class="text-base font-semibold leading-7 text-gray-900">
               Summer 2023 - Premiership league champion at Molson McGill Field
               (11 vs 11)
@@ -260,33 +268,35 @@
   </div>
 
   <!-- Our vision  -->
-  <div class="flex xl:block justify-center xl:justify-start relative overflow-hidden bg-white">
-    <div class="pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
-      <div class="relative mx-auto">
-        <div class="mx-auto">
+  <div
+    class="flex xl:block justify-center relative overflow-hidden bg-white w-full"
+  >
+    <div class="pt-16 w-full">
+      <div class="relative">
+        <div class="w-[50%] mx-auto">
           <h1
             class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-center"
           >
             Our Vision
           </h1>
-          <p class="mt-4 text-lg text-gray-500 text-center">
+          <div class="mt-4 text-lg text-gray-500 text-center">
             The team made up of ambitious young players constitutes the real
             driving force of our club.
-          </p>
+          </div>
         </div>
-        <div class="flex justify-center mt-[2rem] xl:hidden">
+        <div class="flex justify-center mt-[2rem]">
           <img
             :src="ultrafc_logo"
             alt="Ultra FC Premiership Win"
             class="h-[10rem] rounded-xl"
           />
         </div>
-        <div class="flex">
-          <div class="mt-10">
+        <div class="w-full">
+          <div class="mt-10 w-full">
             <!-- Decorative image grid -->
             <div
               aria-hidden="true"
-              class="pointer-events-none hidden xl:block lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+              class="pointer-events-none hidden xl:hidden lg:inset-y-0"
             >
               <div
                 class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8"
@@ -296,62 +306,62 @@
                     class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
                   >
                     <div
-                      class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100"
+                      class="h-[10rem] w-[12rem] overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100"
                     >
                       <img
                         :src="yossof_home"
                         alt=""
-                        class="h-full w-full object-cover object-center"
+                        class="h-[10rem] w-[12rem] rounded-lg"
                       />
                     </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <div class="h-[10rem] w-[12rem] overflow-hidden rounded-lg">
                       <img
                         :src="bachir_home"
                         alt=""
-                        class="h-full w-full object-cover object-center"
+                        class="h-[10rem] w-[12rem] rounded-lg"
                       />
                     </div>
                   </div>
                   <div
                     class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
                   >
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <div class="h-[10rem] w-[12rem] rounded-lg">
                       <img
                         :src="ilyes_raiq_picture"
                         alt=""
-                        class="h-full w-full object-cover object-center"
+                        class="h-[10rem] w-[12rem] rounded-lg"
                       />
                     </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <div class="h-[10rem] w-[12rem] overflow-hidden rounded-lg">
                       <img
                         :src="genaro_home"
                         alt=""
-                        class="h-full w-full object-cover object-center"
+                        class="h-[10rem] w-[12rem] rounded-lg"
                       />
                     </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <div class="h-[10rem] w-[12rem] overflow-hidden rounded-lg">
                       <img
                         :src="aymen_abkari_picture"
                         alt=""
-                        class="h-full w-full object-cover object-center"
+                        class="h-[10rem] w-[12rem] rounded-lg"
                       />
                     </div>
                   </div>
                   <div
                     class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8"
                   >
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <div class="h-[10rem] w-[12rem] overflow-hidden rounded-lg">
                       <img
                         :src="simon_bauvais_home"
                         alt=""
-                        class="h-full w-full object-cover object-center"
+                        class="h-[10rem] w-[12rem] rounded-lg"
                       />
                     </div>
-                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <div class="h-[10rem] w-[12rem] overflow-hidden rounded-lg">
                       <img
                         :src="felix_lundry_home"
                         alt=""
-                        class="h-full w-full object-cover object-center"
+                        class="h-[10rem] w-[12rem] rounded-lg"
                       />
                     </div>
                   </div>
@@ -359,47 +369,54 @@
               </div>
             </div>
 
-            <div class="text-center">
-                <div class="mx-[2rem]">
-              <p class="text-lg text-gray-500">
-                We believe in their potential and their desire to grow.
-              </p>
-              <div class="mt-4 mx-[2rem] h-[15rem] overflow-hidden rounded-lg xl:hidden">
-                <img
-                  :src="aymen_abkari_picture"
-                  alt=""
-                  class="h-full w-full object-cover object-center"
-                />
-              </div>
-              </div>
-              <div class="mx-[2rem]">
-              <p class="mt-4 text-lg text-gray-500">
-                The ambition of these players, combined with their passion for
-                football, creates a dynamic that propels our team towards the
-                future with confidence and hope.
-              </p>
-              <div class="mt-4 mx-[2rem] h-[15rem] overflow-hidden rounded-lg xl:hidden">
-                <img
-                  :src="simon_bauvais_home"
-                  alt=""
-                  class="object-cover object-center"
-                />
-              </div>
-              </div>
-              <div class="mx-[2rem] mt-4">
-                    <p class="mt-4 text-lg text-gray-500">
-                        They are the builders of our sporting heritage, and we are proud
-                        to have them by our side, ready to take on any challenges that
-                        arise their.
-                    </p>
-                    <div class="mt-4 mx-[2rem] h-[25rem] overflow-hidden rounded-lg xl:hidden">
-                        <img
-                        :src="genaro_home"
-                        alt=""
-                        class="object-cover object-center"
-                        />
-                    </div>
+            <div
+              class="flex flex-col xl:flex-row xl:justify-center xl:items-center text-center mt-[2rem]"
+            >
+              <!-- Section Block -->
+              <div
+                class="flex flex-col w-[20rem] mx-auto items-center mt-4 border rounded-xl shadow-xl p-5"
+              >
+                <div class="flex mt-4 text-lg text-black font-bold">
+                  We believe in their potential to grow.
                 </div>
+                <div class="flex mt-4 overflow-hidden rounded-lg">
+                  <img
+                    :src="aymen_abkari_picture"
+                    alt=""
+                    class="h-[10rem] w-[12rem] rounded-lg"
+                  />
+                </div>
+              </div>
+              <!-- Section Block -->
+              <div
+                class="flex flex-col w-[20rem] mx-auto items-center mt-4 border rounded-xl shadow-xl p-5"
+              >
+                <div class="flex mt-4 text-lg text-black font-bold">
+                  We believe in their desire to achieve greatness.
+                </div>
+                <div class="flex mt-4 overflow-hidden rounded-lg">
+                  <img
+                    :src="simon_bauvais_home"
+                    alt=""
+                    class="h-[10rem] w-[12rem] rounded-lg"
+                  />
+                </div>
+              </div>
+              <!-- Section Block -->
+              <div
+                class="flex flex-col w-[20rem] mx-auto items-center mt-4 border rounded-xl shadow-xl p-5"
+              >
+                <div class="flex mt-4 text-black font-bold">
+                  They are the builders of our sporting heritage.
+                </div>
+                <div class="mt-4 overflow-hidden rounded-lg">
+                  <img
+                    :src="genaro_home"
+                    alt=""
+                    class="h-[10rem] w-[12rem] rounded-lg"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -408,51 +425,120 @@
   </div>
 
   <!-- Footer  -->
-  <div class="mt-[4rem] relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+  <div
+    class="mt-[4rem] relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32"
+  >
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2 text-center">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2 text-center"
+      >
         <div class="max-w-xl lg:max-w-lg hidden">
-          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
-          <p class="mt-4 text-lg leading-8 text-gray-300">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Subscribe to our newsletter.
+          </h2>
+          <p class="mt-4 text-lg leading-8 text-gray-300">
+            Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing
+            velit quis. Duis tempor incididunt dolore.
+          </p>
           <div class="mt-6 flex max-w-md gap-x-4 hidden">
             <label for="email-address" class="sr-only">Email address</label>
-            <input id="email-address" name="email" type="email" autocomplete="email" required="" class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email" />
-            <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+            <input
+              id="email-address"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required=""
+              class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+            >
+              Subscribe
+            </button>
           </div>
         </div>
 
         <div class="max-w-xl lg:max-w-lg">
-          <p class="mt-4 text-lg leading-8 text-gray-300 font-bold">© 2023 Ultras FC. All Rights Reserved.</p>
+          <p class="mt-4 text-lg leading-8 text-gray-300 font-bold">
+            © 2023 Ultras FC. All Rights Reserved.
+          </p>
           <div class="mt-6 flex max-w-md gap-x-4 hidden">
             <label for="email-address" class="sr-only">Email address</label>
-            <input id="email-address" name="email" type="email" autocomplete="email" required="" class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email" />
-            <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+            <input
+              id="email-address"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required=""
+              class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+            >
+              Subscribe
+            </button>
           </div>
         </div>
-        
-        <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2 hidden">
+
+        <dl
+          class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2 hidden"
+        >
           <div class="flex flex-col items-start">
             <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
               <CalendarDaysIcon class="h-6 w-6 text-white" aria-hidden="true" />
             </div>
             <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
-            <dd class="mt-2 leading-7 text-gray-400">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</dd>
+            <dd class="mt-2 leading-7 text-gray-400">
+              Non laboris consequat cupidatat laborum magna. Eiusmod non irure
+              cupidatat duis commodo amet.
+            </dd>
           </div>
           <div class="flex flex-col items-start">
             <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
               <HandRaisedIcon class="h-6 w-6 text-white" aria-hidden="true" />
             </div>
             <dt class="mt-4 font-semibold text-white">No spam</dt>
-            <dd class="mt-2 leading-7 text-gray-400">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
+            <dd class="mt-2 leading-7 text-gray-400">
+              Officia excepteur ullamco ut sint duis proident non adipisicing.
+              Voluptate incididunt anim.
+            </dd>
           </div>
         </dl>
       </div>
     </div>
-    <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
-      <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+    <div
+      class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
+      aria-hidden="true"
+    >
+      <div
+        class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+        style="
+          clip-path: polygon(
+            74.1% 44.1%,
+            100% 61.6%,
+            97.5% 26.9%,
+            85.5% 0.1%,
+            80.7% 2%,
+            72.5% 32.5%,
+            60.2% 62.4%,
+            52.4% 68.1%,
+            47.5% 58.3%,
+            45.2% 34.5%,
+            27.5% 76.7%,
+            0.1% 64.9%,
+            17.9% 100%,
+            27.6% 76.8%,
+            76.1% 97.7%,
+            74.1% 44.1%
+          );
+        "
+      />
     </div>
   </div>
-    
 </template>
 
 <script setup>
