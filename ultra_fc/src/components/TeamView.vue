@@ -7,19 +7,24 @@
         </h2>
         <!-- Coaches -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Coaches</div>
-          <div class="flex justify-center items-center space-x-5">
+          <div class="text-center font-bold text-[1.2]">Coaches</div>
+          <div class="flex justify-center items-center space-x-5 rounded-lg">
             <div
               v-for="(player, index) in displayedCoaches"
               :key="index"
-              class="flex flex-col w-[1/3] border rounded-lg shadow-lg h-[15rem]"
+              class="flex flex-col rounded-lg mt-2 w-[100%] mx-auto"
             >
-              <img
+            <img
                 :src="player.picture"
                 :alt="player.name"
-                class="h-full w-full"
+                class="h-[auto] rounded-lg sm:w-[50vw] md:w-[40vw] lg:w-[30vw] mx-auto"
               />
-              <div class="font-bold text-center border bg-white">{{ player.name }}</div>
+              <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
+                <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
+                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
+                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
+                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
+              </div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -35,19 +40,24 @@
         </div>
         <!-- Goal Keepers -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Goalkeepers</div>
+          <div class="text-center font-bold text-[1.2]">Goalkeepers</div>
           <div class="flex justify-center items-center space-x-5">
             <div
               v-for="(player, index) in displayedGoalkeepers"
               :key="index"
-              class="flex flex-col w-[1/3] border rounded-lg shadow-lg h-[15rem]"
+              class="flex flex-col rounded-lg mt-2 w-[100%] mx-auto"
             >
-              <img
+            <img
                 :src="player.picture"
                 :alt="player.name"
-                class="h-full w-full"
+                class="h-[auto] rounded-lg sm:w-[50vw] md:w-[40vw] lg:w-[30vw] mx-auto"
               />
-              <div class="font-bold text-center border bg-white">{{ player.name }}</div>
+              <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
+                <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
+                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
+                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
+                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
+              </div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -64,19 +74,24 @@
 
         <!-- Defense players -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Defenders</div>
+          <div class="text-center font-bold text-[1.2]">Defenders</div>
           <div class="flex justify-center items-center space-x-5">
             <div
               v-for="(player, index) in displayedDefensePlayers"
               :key="index"
-              class="flex flex-col w-[1/3] border rounded-lg shadow-lg h-[15rem]"
+              class="flex flex-col rounded-lg mt-2 w-[100%] mx-auto"
             >
-              <img
+            <img
                 :src="player.picture"
                 :alt="player.name"
-                class="h-full w-full"
+                class="h-[auto] rounded-lg sm:w-[50vw] md:w-[40vw] lg:w-[30vw] mx-auto"
               />
-              <div class="font-bold text-center border bg-white">{{ player.name }}</div>
+              <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
+                <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
+                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
+                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
+                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
+              </div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -93,19 +108,24 @@
 
         <!-- MidField players -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Midfielders</div>
+          <div class="text-center font-bold text-[1.2]">Midfielders</div>
           <div class="flex justify-center items-center space-x-5">
             <div
               v-for="(player, index) in displayedMidFieldPlayers"
               :key="index"
-              class="flex flex-col w-[1/3] border rounded-lg shadow-lg h-[15rem]"
+              class="flex flex-col rounded-lg mt-2 w-[100%] mx-auto"
             >
-              <img
+            <img
                 :src="player.picture"
                 :alt="player.name"
-                class="h-full w-full"
+                class="h-[auto] rounded-lg sm:w-[50vw] md:w-[40vw] lg:w-[30vw] mx-auto"
               />
-              <div class="font-bold text-center border bg-white">{{ player.name }}</div>
+              <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
+                <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
+                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
+                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
+                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
+              </div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -122,19 +142,24 @@
 
         <!-- Strickers players -->
         <div>
-          <div class="text-center font-bold text-[1.5rem]">Strikers</div>
+          <div class="text-center font-bold text-[1.2]">Strikers</div>
           <div class="flex justify-center items-center space-x-5">
             <div
               v-for="(player, index) in displayedStrickers"
               :key="index"
-              class="flex flex-col w-[1/3] border rounded-lg shadow-lg h-[15rem]"
+              class="flex flex-col rounded-lg mt-2 w-[100%] mx-auto"
             >
-              <img
+            <img
                 :src="player.picture"
                 :alt="player.name"
-                class="h-full w-full"
+                class="h-[auto] rounded-lg sm:w-[50vw] md:w-[40vw] lg:w-[30vw] mx-auto"
               />
-              <div class="font-bold text-center border bg-white">{{ player.name }}</div>
+              <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
+                <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
+                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
+                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
+                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
+              </div>
             </div>
           </div>
           <div class="flex justify-center">
@@ -209,17 +234,17 @@ const strickersPlayers = [
 ];
 
 const coachesPlayers = [
-  { name: "Aymen Abkari", picture: aymen_abkari_picture },
+  { name: "Aymen Abkari", picture: aymen_abkari_picture, height: "180cm", country: "morroco", foot: "right", age: "24" },
   // Add more defense players as needed
 ];
 
 
-const itemsToShow = 2;
+const itemsToShow = 1;
 const currentPage = ref(0);
 const currentDefensePage = ref(0);
 const currentMidFieldPage = ref(0);
 const currentCoachesPage = ref(0);
-const currentStrickers = ref(0);
+const currentStrickersPage = ref(0);
 
 const displayedDefensePlayers = computed(() => {
   const startIndex = currentDefensePage.value * itemsToShow;
@@ -240,7 +265,7 @@ const displayedMidFieldPlayers = computed(() => {
 });
 
 const displayedStrickers = computed(() => {
-  const startIndex = currentMidFieldPage.value * itemsToShow;
+  const startIndex = currentStrickersPage.value * itemsToShow;
   const endIndex = startIndex + itemsToShow;
   return strickersPlayers.slice(startIndex, endIndex);
 });
@@ -279,10 +304,10 @@ const showLoadCoachesButton = computed(() =>
 const showPreviousCoachesButton = computed(() => currentCoachesPage.value > 0);
 
 const showLoadStrickersButton = computed(() =>
-  currentStrickers.value < Math.ceil(strickersPlayers.length / itemsToShow) - 1
+currentStrickersPage.value < Math.ceil(strickersPlayers.length / itemsToShow) - 1
 );
 
-const showPreviousStrickersButton = computed(() => currentStrickers.value > 0);
+const showPreviousStrickersButton = computed(() => currentStrickersPage.value > 0);
 
 const loadItems = (category, direction) => {
   if (category === 'goalkeepers') {
@@ -294,7 +319,7 @@ const loadItems = (category, direction) => {
     currentMidFieldPage.value += direction;
   }
   else if (category === 'strickers') {
-    currentStrickers.value += direction;
+    currentStrickersPage.value += direction;
   }
   else if (category === 'coaches') {
     currentCoachesPage.value += direction;

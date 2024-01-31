@@ -291,7 +291,7 @@
             class="h-[10rem] rounded-xl"
           />
         </div>
-        <div class="w-full">
+        <div class="w-full hidden">
           <div class="mt-10 w-full">
             <!-- Decorative image grid -->
             <div
@@ -423,6 +423,98 @@
       </div>
     </div>
   </div>
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto">
+      <div class="w-full">
+        <h2 class="text-base font-semibold leading-7 text-black text-center">
+          About Us
+        </h2>
+        <p
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center"
+        >
+          Our Gallery
+        </p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl hidden">
+        <dl
+          class="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16 text-center"
+        >
+          <div class="relative mx-[2rem]">
+            <div
+              class="mx-auto xl:absolute xl:top-0 xl:left-[-2.5rem] xl:flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+            >
+              <img :src="soccer_ball_icon" alt="soccer" />
+            </div>
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              Summer 2022 - QSL League Quarter-Final at Terrain Catalogna,
+              Lachine (7vs7)
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Ultras FC shined during the QSL League summer tournament. In a
+              very tournament competitive at the Catalogna field in Lachine, the
+              team reached the quarter-finals. They showed their skill and
+              cohesion by winning tense matches against formidable opponents,
+              thus reaching the final stages of the tournament. (Player of the
+              season Thierry NDIMIS).
+            </dd>
+          </div>
+          <div class="relative mx-[2rem]">
+            <div
+              class="mx-auto xl:absolute xl:top-0 xl:left-[-2.5rem] flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+            >
+              <img :src="soccer_ball_icon" alt="soccer" />
+            </div>
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              Winter 2022 - Stringer League Finalist at Concordia Dome (7vs7)
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              The winter season was also successful for us Ultras FC. We have
+              reached the Stringer League final at the Concordia Dome. In an
+              intense match and well fought, we showed our tenacity, but
+              unfortunately, we We had to settle for second place. However, this
+              experience strengthened our determination to succeed in future
+              tournaments. (Player of the tournament Nassim ZAHIRI)
+            </dd>
+          </div>
+          <div class="relative mx-[2rem]">
+            <div
+              class="mx-auto xl:absolute xl:top-0 xl:left-[-2.5rem] flex h-10 w-10 items-center justify-center rounded-lg bg-white"
+            >
+              <img :src="soccer_ball_icon" alt="soccer" />
+            </div>
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              Summer 2023 - Premiership league champion at Molson McGill Field
+              (11 vs 11)
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              The following summer, we redoubled our efforts and won first place
+              to the prestigious Premiership Trophy. Playing at Molson McGill
+              Stadium in an 11 vs 11 format, the team showed its tactical
+              maturity, coordination and his exceptional team spirit. We won the
+              championship convincing way, thus proving that we are among the
+              best teams from the Greater Montreal region.
+            </dd>
+          </div>
+        </dl>
+      </div>  
+      <div class="flex flex-col justify-center mt-[5rem] mx-auto">
+        <div class="my-4 mx-auto">
+          <button @click="goBack" :disabled="currentPage === 1">
+          <img :src="chevron_left" class="h-[16px] w-[16px]" />
+          </button>
+          <button @click="goNext" :disabled="currentPage === totalPages">
+            <img :src="chevron_right" class="h-[16px] w-[16px]" />
+          </button>
+        </div>
+        <div class="flex justify-center mx-auto">
+      <div v-if="visibleImages" v-for="(image, index) in visibleImages" :key="index" class="w-1/3 px-2">
+        <img :src="image" alt="Image" class="h-[25rem] sm:w-[10rem] md:w-[20rem] object-cover rounded-lg" />
+      </div>
+    </div>
+  </div>
+        
+    </div>
+  </div>
 
   <!-- Footer  -->
   <div
@@ -542,7 +634,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import BasePage from "./BasePage.vue";
@@ -558,6 +650,55 @@ import ilyes_raiq_picture from "../assets/ilyes_raiq.jpg";
 import aymen_abkari_picture from "../assets/aymen_abkari.jpg";
 import ultrafc_logo from "../assets/ultrafc_logo_bg_black.jpg";
 import ultrafc_logo_nav from "../assets/ultrafc_logo.png";
+import chevron_right from "../assets/chevron_right.png";
+import chevron_left from "../assets/chevron_left.png";
+// import * as trainingPictures from "../assets/training/";
+
+const currentPage = ref(1);
+
+const images = ref([]);
+const itemsPerPage = 3;
+const totalPages = ref();
+
+
+onMounted(async () => {
+  // Use dynamic import to import images from the folder
+  const imagePaths = await importAllImages(require.context('../assets/training', false, /\.(png|jpe?g|gif|svg)$/));
+
+  // Set the imported image paths to the images ref
+  images.value = imagePaths;
+  visibleImages.value = getVisibleImages()
+  totalPages.value = Math.ceil(images.value.length / itemsPerPage)
+});
+
+const importAllImages = (r) => {
+  return r.keys().map(r);
+};
+
+const goNext = () => {
+  if (currentPage.value < totalPages.value) {
+    currentPage.value++;
+  }
+};
+
+const goBack = () => {
+  if (currentPage.value > 1) {
+    currentPage.value--;
+  }
+};
+
+const getVisibleImages = () => {
+  const startIndex = (currentPage.value - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  console.log(images.value)
+  return images.value.slice(startIndex, endIndex);
+};
+
+const visibleImages = ref();
+
+watch(currentPage, () => {
+  visibleImages.value = getVisibleImages();
+});
 
 const navigation = [
   { name: "Home", href: "/home" },
@@ -566,4 +707,8 @@ const navigation = [
 ];
 
 const mobileMenuOpen = ref(false);
+
+
+
+
 </script>
