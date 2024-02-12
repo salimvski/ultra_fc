@@ -137,7 +137,7 @@
           <h1
             class="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl"
           >
-            Welcome to the ULTRAS FC Football Club!
+            Welcome to the ULTRAS Football Club!
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-600">
             We are delighted with you welcome into our family dedicated to
@@ -506,11 +506,11 @@
             <img :src="chevron_right" class="h-[16px] w-[16px]" />
           </button>
         </div>
-        <div class="flex justify-center mx-auto">
-      <div v-if="visibleImages" v-for="(image, index) in visibleImages" :key="index" class="w-1/3 px-2">
-        <img :src="image" alt="Image" class="h-[25rem] sm:w-[10rem] md:w-[20rem] object-cover rounded-lg" />
-      </div>
-    </div>
+        <div class="flex mx-auto px-5">
+          <div v-if="visibleImages" v-for="(image, index) in visibleImages" :key="index" class="flex h-[20rem] sm:mx-[5%] md:mx-[0%] rounded-lg">
+            <img :src="image" alt="Image" class="rounded-lg" />
+          </div>
+        </div>
   </div>
         
     </div>
@@ -657,7 +657,7 @@ import chevron_left from "../assets/chevron_left.png";
 const currentPage = ref(1);
 
 const images = ref([]);
-const itemsPerPage = 3;
+const itemsPerPage = 1;
 const totalPages = ref();
 
 
@@ -690,7 +690,6 @@ const goBack = () => {
 const getVisibleImages = () => {
   const startIndex = (currentPage.value - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  console.log(images.value)
   return images.value.slice(startIndex, endIndex);
 };
 

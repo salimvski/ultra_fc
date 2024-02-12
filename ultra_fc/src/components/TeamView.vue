@@ -21,9 +21,6 @@
               />
               <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
                 <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
-                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
-                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
-                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
               </div>
             </div>
           </div>
@@ -54,9 +51,6 @@
               />
               <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
                 <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
-                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
-                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
-                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
               </div>
             </div>
           </div>
@@ -88,9 +82,6 @@
               />
               <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
                 <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
-                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
-                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
-                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
               </div>
             </div>
           </div>
@@ -122,9 +113,6 @@
               />
               <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
                 <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
-                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
-                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
-                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
               </div>
             </div>
           </div>
@@ -156,9 +144,6 @@
               />
               <div class="text-center text-sm border bg-white rounded-lg mt-2 rounded-lg mt-2 mx-auto p-2 sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
                 <div><span class="font-bold">Full name:</span> {{ player.name }}</div>
-                <div><span class="font-bold">Height:</span> {{ player.height }}</div>
-                <div><span class="font-bold">Country:</span> {{ player.country }}</div>
-                <div><span class="font-bold">Foot:</span> {{ player.foot }}</div>
               </div>
             </div>
           </div>
