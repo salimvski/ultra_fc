@@ -24,6 +24,7 @@ jobs:
       # Step 3: Install dependencies and build the Vue.js project
       - name: Install dependencies and build
         run: |
+          cd ultra_fc
           npm install
           npm run build
 
@@ -32,4 +33,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./ultrasfc/dist
