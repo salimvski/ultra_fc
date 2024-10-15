@@ -23,8 +23,8 @@ jobs:
 
       # Step 3: Install dependencies and build the Vue.js project
       - name: Install dependencies and build
+        working-directory: ultra_fc
         run: |
-          cd ultra_fc
           npm install
           npm run build
 
